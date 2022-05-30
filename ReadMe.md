@@ -164,6 +164,13 @@ run-minibrowser --debug --wpe
 
 Pass one of `--gtk`, `--jsc-only`, or `--wpe` to indicate the port to use.
 
+For full static library, use:
+```
+Tools/Scripts/build-webkit --jsc-only --cmakeargs="-DENABLE_STATIC_JSC=ON -DUSE_THIN_ARCHIVES=OFF"
+```
+
+
+
 ## Contribute
 
 Congratulations! You’re up and running. Now you can begin coding in WebKit and contribute your fixes and new features to the project. For details on submitting your code to the project, read [Contributing Code](https://webkit.org/contributing-code/).
